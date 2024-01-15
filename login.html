@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/icono.ico">
+    <title>Bienvenido a mi Formulario</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerlogin">
+            <a class="logologin" href="index.html"><img src="../test1/img/icono.ico" alt=""></a>
+            <a class="title" href="index.html">4FIT</a>
+        </div>        
+    </header> 
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a tu lugar saludable</h2>
+                <p>¿Ya tienes cuenta? Da click aqui</p>
+                <button class="sign-up-btn">Ingresa</button>
+            </div>
+        </div>
+        <form action="php/registro_usuario_be.php" method="POST" class="formulario">
+            <h2 class="create-account">Crea tu cuenta</h2>
+            <input type="text" placeholder="Nombre" name="nombre_completo" required>
+            <input type="email" placeholder="Email" name="correo"  required>
+            <input type="password" placeholder="Contraseña" name="contrasena"required>
+            <input type="submit" value="Registrate">
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form action="php/login_usuario_be.php" method="POST" class="formulario">
+            <h2 class="create-account">Inicia Tu Sesión</h2>
+            <input type="email" placeholder="Email" name="correo" required>
+            <input type="password" placeholder="Contraseña" name="contrasena" required>
+            <input type="submit" value="Inicia Tu Sesión">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Que bueno tenerte con nosotros</h2>
+                <p>¿No tienes cuenta? Registrate aquí</p>
+                <button class="sign-in-btn">Regístrate</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

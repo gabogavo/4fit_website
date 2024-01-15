@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'generalfont';;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+@font-face {
+    font-family: 'generalfont';
+    src: url(../fonts/Gatty-Bold.ttf);
+}
+
+@font-face {
+    font-family: '4fit';
+    src: url(../fonts/Essen.ttf);
+}
+.headerlogin{ 
+    overflow: hidden;
+    height: 60px;
+    display: flex; 
+    margin-right: 60px;
+}
+
+.logologin img{
+    height: 65px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 40px;
+}
+
+.title{
+    font-size: 50px;
+    font-family: '4fit';
+    color: rgb(100, 32, 153);
+    text-shadow: 1.5px 1.5px 5px  #4b4949;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.container-form {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.message { 
+    margin: 90px -90px 90px -90px; 
+    padding: 1rem;
+    font-size: 40px;    
+    font-family: '4fit';
+    color: rgb(100, 32, 153);
+    text-shadow: 1.5px 1.5px 5px  #ffffff;
+}
+
+.message h2 {
+    font-size: 60px;
+    padding: 1rem 0;
+}
+
+.message button {
+    background-color: rgb(20, 165, 249);
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 10px;
+    border-radius: 600px;
+    margin-top: 60px;
+    font-weight: 400;
+    margin-top: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.message button:hover {
+    background-color: #ccc9ce;
+    color: rgb(100, 32, 153);
+}
+
+.formulario { 
+    width: 300px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(20, 165, 249, 0.671);
+    text-align: center;
+    text-shadow: 1.5px 1.5px 5px  #6b6969;
+}
+
+.create-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+ 
+
+.border-icon:hover {
+    background-color: #4a4aee;
+    cursor: pointer;
+}
+
+
+.formulario input {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    display: block;
+    margin-bottom: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: #6464f8 2px solid;
+    text-align: center;  
+    outline: none;
+    padding: 3px;
+    font-size: 16px;
+    color: #fff;
+}
+.formulario input::placeholder{
+    color: #fff; 
+    font-weight: normal; 
+}
+
+.formulario input[type="submit"] {
+    width: 50%;
+    margin: auto;
+    border: none;
+    padding: 10px;
+    border-radius: 600px;
+    background-color: rgb(100, 32, 153);
+    font-weight: 400;
+    margin-top: 2px;
+    font-size: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
